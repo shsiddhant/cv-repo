@@ -1,0 +1,68 @@
+% Main CV
+\documentclass[10pt,a4paper]{article}
+% Packages
+\usepackage[vmargin=0.5in, hmargin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{accsupp}
+\usepackage{titlesec}
+
+%Font
+\usepackage[sfdefault]{atkinson} % Loads Atkinson as sans-serif default
+
+% Hyperlink setup
+\hypersetup{colorlinks=true,linkcolor=black, urlcolor=black}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Custom command for project/experience entries
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} \\
+    \end{tabular*}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\LARGE Siddhant Sharma} \\
+    \vspace{5pt}
+    +91 9818754508 $|$ 
+    \href{mailto:sharmasiddhant@proton.me}{sharmasiddhant@proton.me} $|$
+    \href{https://github.com/shsiddhant}{github.com/shsiddhant} $|$ \href{https://linkedin.com/in/shsiddhant}{linkedin.com/in/shsiddhant}
+\end{center}
+
+\vspace{-10pt}
+
+
+% --------- Summary -----------
+\input{sections/summary.tex}
+
+% ------- Projects -------------
+\input{sections/projects.tex}
+
+% -------------Skills ---------
+\input{sections/skills.tex}
+
+%---- Education----------------
+\input{sections/education.tex}
+
+
+\end{document}
