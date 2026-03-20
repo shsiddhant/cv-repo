@@ -1,0 +1,114 @@
+% Simple, ATS-friendly resume template for tech jobs
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Custom command for project/experience entries
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\LARGE Your Name} \\
+    \vspace{5pt}
+    Phone: +00 0000000000 $|$ 
+    Email: \href{mailto:your.email@example.com}{your.email@example.com} \\
+    GitHub: \href{https://github.com/username}{github.com/username} $|$ 
+    LinkedIn: \href{https://linkedin.com/in/username}{linkedin.com/in/username}
+\end{center}
+
+\vspace{-10pt}
+
+%------- EDUCATION -------
+\section{Education}
+\begin{itemize}[leftmargin=0in, label={}]
+    \resumeSubheading
+      {Degree Name}{Expected Graduation: Month Year}
+      {University Name, Location}{CGPA: X.XX/10.0 or X.X/4.0}
+\end{itemize}
+
+%------- SKILLS -------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0in, label={}]
+    \item \textbf{Languages:} Python, SQL, JavaScript, etc.
+    \item \textbf{Frameworks \& Tools:} React, Flask, Django, Git, Docker, etc.
+    \item \textbf{Data \& Analytics:} Pandas, NumPy, Matplotlib, scikit-learn, etc.
+    \item \textbf{Other:} Cloud platforms (AWS/GCP), CI/CD, etc.
+\end{itemize}
+
+%------- EXPERIENCE -------
+\section{Experience}
+\begin{itemize}[leftmargin=0in, label={}]
+    \resumeSubheading
+      {Job Title}{Month Year -- Month Year}
+      {Company Name, Location}{Employment Type (Full-time/Intern)}
+      \begin{itemize}[leftmargin=0.15in]
+        \item Bullet point describing your responsibility or achievement
+        \item Another bullet point with metrics when possible (improved X by Y\%)
+        \item Technical skills or tools used
+      \end{itemize}
+      
+    % Add more experience entries as needed
+\end{itemize}
+
+%------- PROJECTS -------
+\section{Projects}
+\begin{itemize}[leftmargin=0in, label={}]
+    \resumeProjectHeading
+      {Project Name $|$ \textit{Tech Stack Used}}{Month Year -- Present}
+      \begin{itemize}[leftmargin=0.15in]
+        \item Brief description of what you built
+        \item Key technical challenges solved or features implemented
+        \item Impact or results (if applicable)
+      \end{itemize}
+      
+    \resumeProjectHeading
+      {Another Project $|$ \textit{Python, PostgreSQL, Docker}}{Month Year}
+      \begin{itemize}[leftmargin=0.15in]
+        \item Description point 1
+        \item Description point 2
+      \end{itemize}
+      
+    % Add more projects as needed
+\end{itemize}
+
+%------- ACHIEVEMENTS / CERTIFICATIONS (Optional) -------
+\section{Achievements \& Certifications}
+\begin{itemize}[leftmargin=0.15in]
+    \item Achievement or certification with date
+    \item Another achievement
+\end{itemize}
+
+\end{document}
