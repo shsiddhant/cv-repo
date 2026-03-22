@@ -21,7 +21,7 @@ jobs:
       - name: Compile LaTeX document to PDF
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: base/main_cv.tex # Replace with your main .tex file name
+          root_file: main_cv.tex # Replace with your main .tex file name
           # You can specify other options here, e.g., latexmk_use_xelatex: true
           working_directory: base
 
