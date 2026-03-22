@@ -1,11 +1,12 @@
 
 \resumeProjectHeading{memory.fm $|$ \href{https://github.com/shsiddhant/memory.fm}{Github}}
 {September 2025 --- Present}
-{Python, Pandas, NumPy, Streamlit}
+{Python, Pandas, NumPy, Streamlit, Typer}
 \begin{itemize}
-    \item Developed a Python library, CLI tool, and interactive dashboard for analyzing music listening history from Last.fm and Spotify.
+    \item Built a Python library, CLI tool, and dashboard for analyzing music listening history from Last.fm and Spotify.
     \item Integrated data ingestion from Last.fm API, \href{https://www.lastfmstats.com}{lastfmstats} and Spotify exports, with robust validation and error handling.
-    \item Designed time-aware analytics such as Attachment Index, using Pandas and NumPy to extract behavioral listening patterns.
-    \item Developed both command-line (Typer) and web-based (Streamlit) interfaces for exploring listening patterns.
+    \item Designed time-aware analytics (Attachment Index, Obsessive Streaks) and optimized streak detection logic using Cython, 
+    reducing runtime by roughly 10x on large datasets.
+    \item Developed dual interfaces: CLI for data operations and a web dashboard for exploratory analysis and visualization.
     \item Published full API documentation and CI pipeline for testing and builds.
   \end{itemize}
