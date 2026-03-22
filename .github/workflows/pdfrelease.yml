@@ -29,6 +29,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Siddhant_Sharma_CV.pdf # The compiled PDF file to attach to the release
+          files: main_cv.pdf # The compiled PDF file to attach to the release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
