@@ -6,6 +6,8 @@
   {Python, PostgreSQL, dbt, Apache Airflow, Docker}
   \begin{itemize}
     \item Built an end-to-end ELT pipeline to transform nested ball-by-ball JSON data from Cricsheet into an analytics-ready warehouse.
+    \item Implemented a PySpark-based ingestion layer, with a clean schema definition, explode transformations, and
+      file-level metadata to efficiently process 10M records with significant performance improvements.
     \item Designed incremental ingestion using file hashing to prevent duplicate processing of match data.
     \item Orchestrated ingestion and dbt transformations using Apache Airflow (LocalExecutor), integrating workflows into a unified DAG with Astronomer Cosmos.
     \item Modeled warehouse layers in dbt (staging → intermediate → marts) and structured Airflow DAGs using task groups to reflect transformation stages
