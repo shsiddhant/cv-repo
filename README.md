@@ -16,12 +16,13 @@ cv-repo
 │       │   ├── cricket_warehouse.tex
 │       │   ├── memoryfm.tex
 │       │   ├── memoryjournal.tex
+│       │   ├── memorytext.tex
 │       │   └── womens_wc.tex
-│       ├── projects.tex
-│       ├── skills.tex
-│       └── summary.tex
+│       ├── skills/
+│       └── summary/
 ├── README.md
 ├── tailored/
+│   ├── roles/
 │   └── company_role_date/
 └── templates/
     └── simple_cv_template.tex
@@ -29,36 +30,20 @@ cv-repo
 
 ##  Typical Workflow
 
-1. Start from the main CV:
+1. Create a tailored version:
 
    ```
-   base/main_cv.tex
+   cp -r templates/main_cv.tex tailored/company_role_date/
    ```
 
-2. Create a new tailored version:
-
-   ```
-   cp -r base/ tailored/company_role_date/
-   ```
-
-3. Edit CV:
-
-   * Remove irrelevant content
-   * Reorder sections
-   * Adjust bullet points to match the job description
+3. Edit CV: Choose skills, summary, and projects to include based on job / role description.
 
 4. Compile the PDF.
 
 
 ##  Version Control
 
-- Use branches for major variations:
-
-  ```
-  git checkout -b company-name
-  ```
-
-- Tag submitted versions:
+Tag submitted versions:
 
   ```
   git tag company-role-v1
